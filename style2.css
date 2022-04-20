@@ -1,0 +1,37 @@
+#baslik-color-font
+        {
+            font-family: 'Bebas Neue', cursive;
+            font-family: 'Kaushan Script', cursive;
+                font-size: 32px;
+                color:#CCF381;
+                
+        }
+        #altbaslikrenk
+        {
+            font-family: 'Alfa Slab One', cursive;
+            font-family: 'Anton', sans-serif;
+            font-family: 'Bebas Neue', cursive;
+            font-family: 'Kaushan Script', cursive;
+            color:#FFA8A8;
+            font-size: 24px;
+        }
+        #fotolocate1
+        {
+            position: relative;
+            top:-150px;
+        }
+        #liselocale
+        {
+            position: relative;
+            top:-100px;
+        }
+        #unifotolocale
+        {
+            position:relative;
+            top:-100px;
+        }
+        #bilisimlocale
+        {
+            position:relative;
+            top:-120px;
+        }
