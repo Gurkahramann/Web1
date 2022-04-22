@@ -18,20 +18,81 @@
         #fotolocate1
         {
             position: relative;
-            top:-150px;
+            max-width: 100%;
+            height:auto;
+            box-sizing:border-box;
+            display:block;
+            
+            
         }
+        #fotolocate2
+        {
+            position: relative;
+            max-width: 100%;
+            height:auto;
+            box-sizing:border-box;
+            display:block;
+            left:600px;
+            top:-340px;
+        }
+     
         #liselocale
         {
             position: relative;
-            top:-100px;
+            max-width: 100%;
+            height:auto;
+            box-sizing:border-box;
+            display:block;
+            position: relative;
+            top:0px;
         }
         #unifotolocale
         {
-            position:relative;
-            top:-100px;
+            position: relative;
+            max-width: 100%;
+            height:auto;
+            box-sizing:border-box;
+            display:block;
+            top:0px;
+        }
+        #unifotolocale2
+        {
+            
+            position: relative;
+            max-width: 100%;
+            height:auto;
+            box-sizing:border-box;
+            display:block;
+            top:-360px;
+            left:600px
         }
         #bilisimlocale
         {
-            position:relative;
-            top:-120px;
+            position: relative;
+            max-width: 100%;
+            height:auto;
+            box-sizing:border-box;
+            display:block;
+
+        }
+        #bilisimlocale2
+        {
+            position: relative;
+            max-width: 100%;
+            height:auto;
+            box-sizing:border-box;
+            display:block;
+            top:-350px;
+            left:600px;
+        }
+        #test
+        {
+            position: relative;
+            max-width: 100%;
+            height:auto;
+            box-sizing:border-box;
+            display:block;
+            top:10px;
+            right: 10px;
+            padding:2px;
         }
