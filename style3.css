@@ -1,0 +1,58 @@
+body
+{
+    background-color: #35589A;
+}
+.baslik{
+    
+    
+    font-family: 'Kaushan Script', cursive;
+    
+    font-size: 32px;
+    color:#fff;
+    text-align:center;
+}
+.sehir-p1
+{
+    font-style: oblique;
+    font-size: 24px;
+}
+.img-fluid
+{
+    position: relative;
+    max-width: 100%;
+    height:auto;
+    box-sizing:border-box;
+    display:block;
+}
+.img-fluid1
+{
+    position: relative;
+    max-width: 100%;
+    height:auto;
+    box-sizing:border-box;
+    display:block;
+}
+.img-fluid2
+{
+    position: relative;
+    max-width: 100%;
+    height:auto;
+    box-sizing:border-box;
+    display:block;
+}
+.img-fluid3
+{
+    position: relative;
+    max-width: 100%;
+    height:auto;
+    box-sizing:border-box;
+    display:block;
+}
+.img-fluid4
+{
+    position: relative;
+    max-width: 100%;
+    height:auto;
+    box-sizing:border-box;
+    display:block;
+}
