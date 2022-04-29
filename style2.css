@@ -75,16 +75,6 @@
             display:block;
 
         }
-        #bilisimlocale2
-        {
-            position: relative;
-            max-width: 100%;
-            height:auto;
-            box-sizing:border-box;
-            display:block;
-            top:-350px;
-            left:600px;
-        }
         #test
         {
             position: relative;

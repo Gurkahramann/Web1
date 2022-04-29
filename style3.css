@@ -56,3 +56,27 @@ body
     box-sizing:border-box;
     display:block;
 }
+.spor-baslik
+{
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    color: #21E6C1;
+    font-size: 48px;
+}
+.spor-paragraf
+{
+    font-style: oblique;
+    font-size: 24px; 
+}
+.spor-kadro
+{
+    position: relative;
+    max-width: 100%;
+    height:auto;
+}
+.link-takim
+{
+    font-family: 'Kaushan Script', cursive;
+    color: #21E6C1;
+    font-size: 48px;
+}
