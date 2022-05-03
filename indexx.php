@@ -17,7 +17,7 @@ if(isset($_POST['submit']))
     }
     else
     {
-        echo "Lütfen veri giriniz";
+        echo "Kullanici Adi ve Sifrenizi giriniz";
         header("Refresh: 3; url=anagiris.html"); 
     }
  
