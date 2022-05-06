@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>İletişim</title>
+        <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="style4.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <body>
+            <div class="btn-group-vertical">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <a href="ozgecmis.html" class="btn btn-outline-warning btn-lg active" role="button" aria-pressed="true">EĞİTİM BİLGİLERİM</a><br>
+                            <a href="sehrim.html" class="btn btn-outline-warning btn-lg active"  role="button" aria-pressed="true">ŞEHRİM</a><br>
+                            <button type="button" class="btn btn-outline-warning btn-lg">İLGİ ALANLARIM</button><br>
+                            <a href="iletisim.html" role="button" class="btn btn-outline-warning btn-lg active" aria-pressed="true">İLETİŞİM</a><br>
+                            <a href="anasayfaa.html" role="button" class="btn btn-outline-warning btn-lg active">HAKKINDA</a><br>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+    </head>
+            <div class="row-md-8">
+                <h1 class="h1-tip" data-component="header">Bize Ulaşın</h1>
+                <form  name="control" onsubmit="controlForm()"  method="post">
+                    <label for="exampleInputEmail1" class="renk-p1">İsim</label>
+                    <span class="form-required"  style="color: red">*</span><br>
+                    <input type="text" class="form-control" style="width:300px;" name="isim" placeholder="Adınız"><br>
+                    <h2></h2>
+                    <input type="text" class="form-control" name="soyisim" style="width:300px;" placeholder="Soyadınız"><br>
+                    <label for="exampleInputEmail1" class="renk-p1">E-mail</label>
+                    <span class="form-required" style="color: red">*</span><br>
+                    <input type="text" class="form-control" name="E-mail" id="exampleInputEmail1" onkeyup="check()" placeholder="E-mail" style="width:300px;" onkeyup="check()">
+                    <p id="Text"><i class="fa" aria-hidden="true"></i></p>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="renk-p1">Mesajınız</label>
+                        <span class="form-required" style="color:red">*</span><br>
+                        <textarea style="resize:none;" rows="15" cols="70" name="mesaj" maxlength="255" class="form-control" id="exampleFormControlTextarea1"></textarea>
+                    </div>
+                    <a  class="btn btn-outline-warning " type="submit" onclick="controlForm()" id="navigate">Gönder</a>  
+                    <button type="reset" class="btn btn-danger">Temizle</button>
+                </form>
+                
+               
+            </div>
+            <script>
+                function controlForm(){
+                    var a=document.forms["control"]["isim"].value;
+                    var b=document.forms["control"]["soyisim"].value;
+                    var c=document.forms["control"]["E-mail"].value;
+                    var d=document.forms["control"]["mesaj"].value;
+                    if(a=="" && b=="" && c=="" && d=="")
+                    {
+                        alert("Lütfen İşaretli Yerleri Boş Bırakmayınız");
+                    }
+                    else
+                    {
+                        if(a=="" || b=="")
+                        {
+                            alert("İsim ve Soyad boş bırakılamaz");
+                            return false;
+                        }
+                        if(c=="")
+                        {
+                            alert("E-Mail Boş Bırakılamaz");
+                            return false;
+                        }
+                        if(d=="")
+                        {
+                            alert("Mesaj kutusu boş bırakılamaz");
+                            return false;
+                        }
+                    }
+                    if(a!="" && b!="" && c!="" && d!="")
+                    {
+                        saveStorage();
+                        var k= document.getElementById('navigate');
+                        k.href="geribildir.html"
+                    }
+                }
+                function check()
+                {
+                    var Email=document.getElementById("exampleInputEmail1").value;
+                    var Control=/^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}$/
+                    var text=document.getElementById("Text");
+                    var icon=document.querySelector(".fa");
+                    if(Email.match(Control))
+                    {
+                        text.innerHTML="E-Mail Adresiniz Geçerli";
+                    }
+                    else
+                    {
+                        text.innerHTML="Lütfen Geçerli Bir E-Mail Adresi Giriniz";
+                    }
+                }
+                function saveStorage()
+                {
+                    var a=document.forms["control"]["isim"].value;
+                    var b=document.forms["control"]["soyisim"].value;
+                    var c=document.forms["control"]["E-mail"].value;
+                    var d=document.forms["control"]["mesaj"].value;
+                    sessionStorage.setItem('name', a);
+                    sessionStorage.setItem('surname', b);
+                    sessionStorage.setItem('mail', c);
+                    sessionStorage.setItem('Message', d);
+                }
+            </script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+             <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        </body>
