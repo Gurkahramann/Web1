@@ -1,0 +1,27 @@
+body
+{
+background-color: #35589A;
+}
+.btn btn-outline-warning
+{
+    position: relative;
+    top: 200px;
+}
+.h1-tip
+{
+    font-family: 'Kaushan Script', cursive;
+    padding-left: 80px;
+    color: #21E6C1;
+    font-size: 24px;
+    
+}
+.renk-p1
+{
+    font-style: oblique;
+    font-size: 24px;
+  padding-left: 20px;  
+}
+.textbox
+{
+    font-size: 24px;
+}
