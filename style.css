@@ -28,7 +28,7 @@ background-color: #35589A;
 .h1-tip
 {
     font-family: 'Kaushan Script', cursive;
-    padding-left: 80px;
+    padding-left: 10px;
     color: #21E6C1;
     font-size: 24px;
     
@@ -64,7 +64,7 @@ background-color: #35589A;
     display:block;
     position: relative;
     left: 380px;
-    top:-110px;
+    top:-180px;
     
 }
 #fotokonum3

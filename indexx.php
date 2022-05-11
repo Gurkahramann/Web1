@@ -8,6 +8,7 @@ if(isset($_POST['submit']))
         if($username=='g211210028@sakarya.edu.tr' && $password=='g211210028')
         {
             echo "Hoşgeldiniz g211210028";
+            
         }
         else
         {
